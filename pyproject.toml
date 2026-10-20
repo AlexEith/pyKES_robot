@@ -1,0 +1,30 @@
+[build-system]
+requires = ["uv_build>=0.4.0"]
+build-backend = "uv_build"
+
+[project]
+name = "pykes_robot_app"
+version = "0.1.0"
+description = "Python package for analysis of automated photocatalysis robot experiments."
+authors = [
+    {name = "Alexander Eith", email = "alexander.eith@uni-jena.de"},
+    {name = "Jacob Schneidewind", email = "pyH2A.pypi@gmail.com"},
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24.4",
+    "pandas>=2.0.3",
+    "pykes>=0.2.4",
+    "scipy>=1.10.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/water-splitting-group/pyKES-Robot-App"
+"Bug Tracker" = "https://github.com/water-splitting-group/pyKES-Robot-App/issues"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]

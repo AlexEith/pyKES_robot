@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pyKES Robot App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@stlite/browser@1.7.3/build/stlite.css"
+    />
+    <style>
+      html,
+      body,
+      #root {
+        height: 100%;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      import { mount } from "https://cdn.jsdelivr.net/npm/@stlite/browser@1.7.3/build/stlite.js";
+      import { files, requirements } from "./files.js";
+
+      mount(
+        {
+          entrypoint: "Home.py",
+          files,
+          requirements,
+          streamlitConfig: { "browser.gatherUsageStats": false },
+        },
+        document.getElementById("root"),
+      );
+    </script>
+  </body>
+</html>
