@@ -21,8 +21,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/water-splitting-group/pyKES-Robot-App"
-"Bug Tracker" = "https://github.com/water-splitting-group/pyKES-Robot-App/issues"
+"Homepage" = "https://github.com/water-splitting-group/pyKES_robot_App"
+"Bug Tracker" = "https://github.com/water-splitting-group/pyKES_robot_App/issues"
 
 [dependency-groups]
 dev = [
