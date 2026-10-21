@@ -62,6 +62,9 @@ def read_robot_log_file(file_path):
     time_s = measurements['duration'].to_numpy(float) - degassing_start
     status = measurements['status'].to_numpy()
 
+    # Without it the baseline fit only sees the post-reaction data
+    find_phase_start(time_s, status, 'PREREACTION-BASELINE', file_path)
+
     raw_data_dict = {
         'time_s': time_s,
         'time_unit': 's',
